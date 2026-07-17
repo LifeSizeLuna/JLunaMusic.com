@@ -133,6 +133,40 @@
     margin-bottom: 40px;
   }
   .epk-rule { width: 100%; height: 1px; background: #222; margin-bottom: 32px; }
+  .chart-badge {
+    display: inline-flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px 16px;
+    padding: 12px 20px;
+    border: 1px solid var(--gold);
+    background: rgba(198,160,75,0.06);
+    margin-bottom: 32px;
+  }
+  .chart-badge-item {
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+  }
+  .chart-badge-num {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.4rem;
+    letter-spacing: 0.03em;
+    color: var(--gold);
+    line-height: 1;
+  }
+  .chart-badge-label {
+    font-family: 'Space Mono', monospace;
+    font-size: 0.6rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--white);
+  }
+  .chart-badge-divider {
+    width: 1px;
+    height: 20px;
+    background: var(--gold-dim);
+  }
   .epk-stat-row {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -424,6 +458,17 @@
     <div class="epk-tag">Electronic Press Kit</div>
     <h1 class="epk-name">JLuna</h1>
     <p class="epk-genre">Dark Industrial Techno &nbsp;·&nbsp; Bronx, New York</p>
+    <div class="chart-badge">
+      <div class="chart-badge-item">
+        <span class="chart-badge-num">#14</span>
+        <span class="chart-badge-label">Beatport Top 100<br>Overall</span>
+      </div>
+      <div class="chart-badge-divider"></div>
+      <div class="chart-badge-item">
+        <span class="chart-badge-num">#1</span>
+        <span class="chart-badge-label">Beatport Techno<br>Peak Time / Driving</span>
+      </div>
+    </div>
     <div class="epk-rule"></div>
     <div class="epk-stat-row">
       <div>
@@ -481,6 +526,7 @@
       <div>
         <div class="release-name">Corrupted Signal EP</div>
         <div class="release-meta">Addictive Sounds &nbsp;·&nbsp; July 10, 2026</div>
+        <div class="release-meta" style="color:var(--gold);font-weight:700;letter-spacing:0.05em;">#14 Beatport Top 100 (Overall) &nbsp;·&nbsp; #1 Beatport Techno (Peak Time/Driving)</div>
       </div>
       <a href="https://push.fm/fl/corrupted-signal" class="release-link" target="_blank">Stream →</a>
     </div>

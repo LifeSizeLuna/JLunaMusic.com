@@ -172,6 +172,43 @@
     animation: fadeUp 0.8s ease forwards 0.6s;
   }
 
+  .chart-badge {
+    display: inline-flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px 16px;
+    padding: 12px 20px;
+    border: 1px solid var(--gold);
+    background: rgba(198,160,75,0.06);
+    margin-bottom: 32px;
+    opacity: 0;
+    animation: fadeUp 0.8s ease forwards 0.7s;
+  }
+  .chart-badge-item {
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+  }
+  .chart-badge-num {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.4rem;
+    letter-spacing: 0.03em;
+    color: var(--gold);
+    line-height: 1;
+  }
+  .chart-badge-label {
+    font-family: 'Space Mono', monospace;
+    font-size: 0.6rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--white, #F0EDE6);
+  }
+  .chart-badge-divider {
+    width: 1px;
+    height: 20px;
+    background: var(--gold-dim);
+  }
+
   .hero-rule {
     width: 100%;
     height: 1px;
@@ -932,6 +969,17 @@
     <div class="hero-tag">Bronx, New York <span class="pink-accent"></span></div>
     <h1 class="hero-title">JLuna<span>.</span></h1>
     <p class="hero-sub">Dark Industrial Techno &nbsp;·&nbsp; 130–137 BPM &nbsp;·&nbsp; Bronx, New York</p>
+    <div class="chart-badge">
+      <div class="chart-badge-item">
+        <span class="chart-badge-num">#14</span>
+        <span class="chart-badge-label">Beatport Top 100<br>Overall</span>
+      </div>
+      <div class="chart-badge-divider"></div>
+      <div class="chart-badge-item">
+        <span class="chart-badge-num">#1</span>
+        <span class="chart-badge-label">Beatport Techno<br>Peak Time / Driving</span>
+      </div>
+    </div>
     <div class="hero-rule"></div>
     <div class="hero-links">
       <a href="https://push.fm/fl/corrupted-signal" class="btn-primary" target="_blank">Out Now — Corrupted Signal EP</a>
@@ -978,7 +1026,7 @@
 </div>
 
 <div class="countdown-wrap" id="release">
-  <div class="countdown-label">Out Now</div>
+  <div class="countdown-label">Out Now &nbsp;·&nbsp; #14 Beatport Top 100</div>
   <div class="countdown-title">Corrupted Signal EP — Addictive Sounds</div>
   <div class="countdown-grid">
     <div class="countdown-released" style="font-family:'Bebas Neue',sans-serif;font-size:clamp(2rem,6vw,4.5rem);color:var(--gold);letter-spacing:0.1em;">Corrupted Signal / Emergency SEQ</div>
@@ -1046,6 +1094,7 @@
     <div class="release-info">
       <h3>Corrupted Signal EP</h3>
       <p>Corrupted Signal / Emergency SEQ &nbsp;·&nbsp; Addictive Sounds &nbsp;·&nbsp; July 10, 2026</p>
+      <p style="color:var(--gold);font-weight:700;letter-spacing:0.05em;">#14 Beatport Top 100 (Overall) &nbsp;·&nbsp; #1 Beatport Techno (Peak Time/Driving)</p>
     </div>
     <a href="https://push.fm/fl/corrupted-signal" class="release-link" target="_blank">Stream / Buy →</a>
   </div>
