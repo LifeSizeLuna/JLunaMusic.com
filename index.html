@@ -612,6 +612,20 @@
     margin: 0 auto;
   }
 
+  .video-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    margin-top: 40px;
+  }
+
+  .video-grid .video-embed { margin-top: 0; }
+  .video-grid .video-meta { margin-top: 16px; }
+
+  @media (max-width: 768px) {
+    .video-grid { grid-template-columns: 1fr; gap: 32px; }
+  }
+
   .video-embed {
     margin-top: 40px;
     position: relative;
@@ -1120,18 +1134,36 @@
 
 <section class="video" id="video">
   <div class="video-inner">
-    <div class="section-label">Live Set</div>
-    <div class="video-embed">
-      <iframe src="https://www.youtube.com/embed/eIIIH7ztzWY" 
-        title="JLuna Live Set" 
-        frameborder="0" 
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-        allowfullscreen>
-      </iframe>
-    </div>
-    <div class="video-meta">
-      <div class="video-title">JLuna — Live Set</div>
-      <div class="video-label">Dark Industrial Techno</div>
+    <div class="section-label">Live Sets</div>
+    <div class="video-grid">
+      <div>
+        <div class="video-embed">
+          <iframe src="https://www.youtube.com/embed/eIIIH7ztzWY"
+            title="JLuna Live Set"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+          </iframe>
+        </div>
+        <div class="video-meta">
+          <div class="video-title">JLuna — Live Set</div>
+          <div class="video-label">Dark Industrial Techno</div>
+        </div>
+      </div>
+      <div>
+        <div class="video-embed">
+          <iframe src="https://www.youtube.com/embed/M98OT_fsC34"
+            title="JLuna — Corrupted Signal Mix"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+          </iframe>
+        </div>
+        <div class="video-meta">
+          <div class="video-title">JLuna — Corrupted Signal Mix</div>
+          <div class="video-label">Dark Industrial Techno</div>
+        </div>
+      </div>
     </div>
   </div>
 </section>

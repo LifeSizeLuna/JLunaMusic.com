@@ -335,6 +335,24 @@
     top: 0; left: 0;
     width: 100%; height: 100%;
   }
+  .video-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    margin-top: 8px;
+  }
+  .video-grid .video-embed { margin-top: 0; }
+  .video-grid-title {
+    font-family: 'Space Mono', monospace;
+    font-size: 0.6rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--dim);
+    margin-top: 10px;
+  }
+  @media (max-width: 768px) {
+    .video-grid { grid-template-columns: 1fr; gap: 24px; }
+  }
 
   /* PHOTOS */
   .photos-wrap { background: #0d0d0d; border-bottom: 1px solid #1a1a1a; }
@@ -574,14 +592,30 @@
 <!-- VIDEO -->
 <div class="video-wrap">
   <div class="epk-section">
-    <div class="section-label">Live Set</div>
-    <div class="video-embed">
-      <iframe src="https://www.youtube.com/embed/eIIIH7ztzWY"
-        title="JLuna Live Set"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen>
-      </iframe>
+    <div class="section-label">Live Sets</div>
+    <div class="video-grid">
+      <div>
+        <div class="video-embed">
+          <iframe src="https://www.youtube.com/embed/eIIIH7ztzWY"
+            title="JLuna Live Set"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+          </iframe>
+        </div>
+        <div class="video-grid-title">JLuna — Live Set</div>
+      </div>
+      <div>
+        <div class="video-embed">
+          <iframe src="https://www.youtube.com/embed/M98OT_fsC34"
+            title="JLuna — Corrupted Signal Mix"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+          </iframe>
+        </div>
+        <div class="video-grid-title">JLuna — Corrupted Signal Mix</div>
+      </div>
     </div>
   </div>
 </div>
